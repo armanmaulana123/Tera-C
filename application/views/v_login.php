@@ -48,6 +48,11 @@
                         </div>
                     </div>
                 </div>
+                <center style="margin-top: 10%;">
+                    <div>
+                        &copy; 2022 PPLA D2 | <span style="color: #F19066;">Tera-C</span>
+                    </div>
+                </center>
             </div>
         </div>
     </div>
