@@ -14,7 +14,7 @@ class Landing extends CI_Controller
 
     public function login()
     {
-        $data['title'] = "Tera-C | Login";
+        $data['title'] = "Tera-C | Masuk";
 
         $this->load->view('templates/landing/header.php', $data);
         $this->load->view('v_login.php');
@@ -22,9 +22,9 @@ class Landing extends CI_Controller
 
     public function register()
     {
-        $data['title'] = "Tera-C";
+        $data['title'] = "Tera-C | Registrasi";
 
         $this->load->view('templates/landing/header.php', $data);
-        $this->load->view('register.php');
+        $this->load->view('v_register.php');
     }
 }

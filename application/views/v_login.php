@@ -20,14 +20,14 @@
         </div>
         <div class="row justify-content-center" style="margin-top: 3%;">
             <div class="col-md-4 justify-content-center">
-                <div class="card text-dark bg-light mb-3" style="max-width: 100%;">
+                <div class="card text-dark bg-light mb-3 o-hidden border-0 shadow-lg" style="max-width: 100%;">
                     <div class="card-body" style="background-color: white;">
                         <div class="row justify-content-between" style="margin-top:2%;">
                             <div class="col-md-9">
                                 <h5 style="font-weight: bold;">Masuk</h5>
                             </div>
                             <div class="col-md-3" style="margin-top: 1%;">
-                                <a href="#" style="color:#F19066; text-decoration:none;">
+                                <a href="<?= base_url('landing/register') ?>" style="color:#F19066; text-decoration:none;">
                                     <h6>Daftar</h6>
                                 </a>
                             </div>
