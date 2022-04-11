@@ -6,16 +6,25 @@ class Landing extends CI_Controller
 
     public function index()
     {
-        $this->load->view('home.php');
+        $data['title'] = "Tera-C";
+
+        $this->load->view('templates/landing/header.php', $data);
+        $this->load->view('v_home.php');
     }
 
     public function login()
     {
-        $this->load->view('login.php');
+        $data['title'] = "Tera-C | Login";
+
+        $this->load->view('templates/landing/header.php', $data);
+        $this->load->view('v_login.php');
     }
 
     public function register()
     {
+        $data['title'] = "Tera-C";
+
+        $this->load->view('templates/landing/header.php', $data);
         $this->load->view('register.php');
     }
 }

@@ -1,26 +1,3 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="<?= base_url() ?>assets/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>assets/font/Poppins">
-
-    <style>
-        body {
-            font-family: Poppins;
-        }
-    </style>
-
-    <title>Tera-C</title>
-</head>
-
 <body style="background-color: #e1e1e1;">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navigasi" style="background-color: #F19066; height: 80px;">
         <div class="container-fluid">
@@ -38,7 +15,7 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 25%;">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="#masuk" style="color:black">Masuk</a>
+                    <a class="nav-link" href="<?= base_url("landing/login") ?>" style="color:black">Masuk</a>
                     <button type="button" class="btn btn-outline-dark" style="margin-left: 5%;">Daftar</button>
                 </div>
             </div>
