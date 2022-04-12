@@ -16,7 +16,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 25%;">
                 <div class="navbar-nav">
                     <a class="nav-link" href="<?= base_url("landing/login") ?>" style="color:black">Masuk</a>
-                    <button type="button" class="btn btn-outline-dark" style="margin-left: 5%;">Daftar</button>
+                    <a href="<?= base_url('landing/register') ?>" class="btn btn-outline-dark" style="margin-left: 5%;">Daftar</a>
                 </div>
             </div>
         </div>
