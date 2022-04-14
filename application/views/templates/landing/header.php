@@ -12,6 +12,10 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url() ?>assets/font/Poppins">
 
+    <link rel="stylesheet" href="<?= base_url('vendor/sweetalert/dist/sweetalert2.min.css') ?>">
+
+    <script type="text/javascript" src="<?= base_url('vendor/sweetalert/dist/sweetalert2.all.min.js') ?>"></script>
+
     <style>
         body {
             font-family: Poppins;

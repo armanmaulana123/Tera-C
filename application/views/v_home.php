@@ -1,4 +1,28 @@
 <body style="background-color: #e1e1e1;">
+    <?php
+    $pesan = $this->session->flashdata('pesan');
+    if ($pesan['status_pesan'] == true && !empty($pesan)) {
+        echo '
+				<script>
+					Swal.fire({
+						title: "Berhasil",
+                        text: "' . $pesan['isi_pesan'] . '",
+						type: "success",
+						confirmButtonText: "Close"
+					});
+				</script>';
+    } else if ($pesan['status_pesan'] == false && !empty($pesan)) {
+        echo '
+				<script>
+					Swal.fire({
+						title: "Gagal",
+                        text: "' . $pesan['isi_pesan'] . '",
+						type: "error",
+						confirmButtonText: "Close"
+					});
+				</script>';
+    }
+    ?>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navigasi" style="background-color: #F19066; height: 80px;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="color:white; padding-left: 3%;">
@@ -15,8 +39,12 @@
             </div>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="margin-left: 25%;">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="<?= base_url("landing/login") ?>" style="color:black">Masuk</a>
-                    <a href="<?= base_url('landing/register') ?>" class="btn btn-outline-dark" style="margin-left: 5%;">Daftar</a>
+                    <?php if ($data_user == null) { ?>
+                        <a class="nav-link" href="<?= base_url("landing/login") ?>" style="color:black">Masuk</a>
+                        <a href="<?= base_url('landing/register') ?>" class="btn btn-outline-dark" style="margin-left: 5%;">Daftar</a>
+                    <?php } else { ?>
+                        <a href="<?= base_url('landing/logout') ?>" class="btn btn-outline-dark" style="margin-left: 5%;">Logout</a>
+                    <?php } ?>
                 </div>
             </div>
         </div>

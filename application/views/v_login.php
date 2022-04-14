@@ -9,6 +9,30 @@
 </head>
 
 <body>
+    <?php
+    $pesan = $this->session->flashdata('pesan');
+    if ($pesan['status_pesan'] == true && !empty($pesan)) {
+        echo '
+				<script>
+					Swal.fire({
+						title: "Berhasil",
+                        text: "' . $pesan['isi_pesan'] . '",
+						type: "success",
+						confirmButtonText: "Close"
+					});
+				</script>';
+    } else if ($pesan['status_pesan'] == false && !empty($pesan)) {
+        echo '
+				<script>
+					Swal.fire({
+						title: "Gagal",
+                        text: "' . $pesan['isi_pesan'] . '",
+						type: "error",
+						confirmButtonText: "Close"
+					});
+				</script>';
+    }
+    ?>
     <div class="container-fluid" style="margin-top: 6%;">
         <div class="row justify-content-center" style="margin-left: 31%;">
             <div class="col-md-5">
@@ -33,15 +57,15 @@
                             </div>
                         </div>
                         <div style="margin-top: 5%;">
-                            <form>
+                            <form action="<?= base_url("landing/proses_login") ?>" method="POST">
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
                                     <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                                 </div>
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
                                 </div>
                                 <button type="submit" class="btn" style="width: 100%; margin-top:5%; background-color:#F19066; color:white;">Submit</button>
                             </form>
