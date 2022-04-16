@@ -43,7 +43,8 @@
                         <a class="nav-link" href="<?= base_url("landing/login") ?>" style="color:black">Masuk</a>
                         <a href="<?= base_url('landing/register') ?>" class="btn btn-outline-dark" style="margin-left: 5%;">Daftar</a>
                     <?php } else { ?>
-                        <a href="<?= base_url('landing/logout') ?>" class="btn btn-outline-dark" style="margin-left: 5%;">Logout</a>
+                        <a href="#"><img src="<?= base_url('assets/images/img_profil/') . $data_user['foto_profil'] ?>" style="max-width: 30%;"></a>
+                        <a href="<?= base_url('landing/logout') ?>" class="btn btn-outline-dark">Logout</a>
                     <?php } ?>
                 </div>
             </div>

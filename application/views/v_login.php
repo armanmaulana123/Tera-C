@@ -67,7 +67,7 @@
                                     <label for="exampleInputPassword1" class="form-label">Password</label>
                                     <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
                                 </div>
-                                <button type="submit" class="btn" style="width: 100%; margin-top:5%; background-color:#F19066; color:white;">Submit</button>
+                                <button type="submit" class="btn" style="width: 100%; margin-top:5%; background-color:#F19066; color:white;">Login</button>
                             </form>
                         </div>
                     </div>
