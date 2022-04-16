@@ -1,26 +1,28 @@
 <body style="background-color: #e1e1e1;">
     <?php
     $pesan = $this->session->flashdata('pesan');
-    if ($pesan['status_pesan'] == true && !empty($pesan)) {
-        echo '
-				<script>
-					Swal.fire({
-						title: "Berhasil",
-                        text: "' . $pesan['isi_pesan'] . '",
-						type: "success",
-						confirmButtonText: "Close"
-					});
-				</script>';
-    } else if ($pesan['status_pesan'] == false && !empty($pesan)) {
-        echo '
-				<script>
-					Swal.fire({
-						title: "Gagal",
-                        text: "' . $pesan['isi_pesan'] . '",
-						type: "error",
-						confirmButtonText: "Close"
-					});
-				</script>';
+    if (!empty($pesan)) {
+        if ($pesan['status_pesan'] == true && !empty($pesan)) {
+            echo '
+                    <script>
+                        Swal.fire({
+                            title: "Berhasil",
+                            text: "' . $pesan['isi_pesan'] . '",
+                            type: "success",
+                            confirmButtonText: "Close"
+                        });
+                    </script>';
+        } else if ($pesan['status_pesan'] == false && !empty($pesan)) {
+            echo '
+                    <script>
+                        Swal.fire({
+                            title: "Gagal",
+                            text: "' . $pesan['isi_pesan'] . '",
+                            type: "error",
+                            confirmButtonText: "Close"
+                        });
+                    </script>';
+        }
     }
     ?>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navigasi" style="background-color: #F19066; height: 80px;">
