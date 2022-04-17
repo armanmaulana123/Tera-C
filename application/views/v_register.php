@@ -64,7 +64,9 @@
                             <h3 style="color: #F19066;">Tera-C</h3>
                         </div>
                         <div class="col-md-2">
-                            <a href="<?= base_url('Landing') ?>" style="font-size: xx-large; text-decoration:none; color:#F19066">x</a>
+                            <h5>
+                                <a href="<?= base_url('Landing') ?>" style="font-size: xx-large; text-decoration:none; color:#F19066">X</a>
+                            </h5>
                         </div>
                     </div>
                     <h3 style="margin-top: 18%;">Daftar Sekarang</h3>

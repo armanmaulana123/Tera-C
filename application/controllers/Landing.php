@@ -20,6 +20,18 @@ class Landing extends CI_Controller
         $this->load->view('v_home.php');
     }
 
+    public function profile()
+    {
+        // $this->load->view('templates/landing/header.php', $data);
+        $this->load->view('v_profile.php');
+    }
+
+    public function editProfile()
+    {
+        // $this->load->view('templates/landing/header.php', $data);
+        $this->load->view('v_editProfile.php');
+    }
+
     public function login()
     {
         $data['title'] = "Tera-C | Masuk";

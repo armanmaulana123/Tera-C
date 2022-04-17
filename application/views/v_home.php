@@ -27,7 +27,7 @@
     ?>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navigasi" style="background-color: #F19066; height: 80px;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="color:white; padding-left: 3%;">
+            <a class="navbar-brand" href="#" style="color:white; padding-left: 5%;">
                 Tera-C</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,10 @@
                 <div class="navbar-nav">
                     <?php if ($data_user == null) { ?>
                         <a class="nav-link" href="<?= base_url("landing/login") ?>" style="color:black">Masuk</a>
-                        <a href="<?= base_url('landing/register') ?>" class="btn btn-outline-dark" style="margin-left: 5%;">Daftar</a>
+                        <a class="nav-link" href="<?= base_url('landing/register') ?>"style="margin-left: 5%; color:black">Daftar</a>
+
+                        <a class="nav-link" href="<?= base_url('landing/profile') ?>"style="margin-left: 5%; color:black">Profile</a> <!-- Ini sementara yaa mann -->
+                        
                     <?php } else { ?>
                         <a href="#"><img src="<?= base_url('assets/images/img_profil/') . $data_user['foto_profil'] ?>" style="max-width: 30%;"></a>
                         <a href="<?= base_url('landing/logout') ?>" class="btn btn-outline-dark">Logout</a>
@@ -53,7 +56,7 @@
         </div>
     </nav>
 
-    <div class="container " id="beranda" style="background-color: white; margin-top: 6.5%; max-width: 100%; height: 740px; max-height: 1080px;">
+    <div class="container" id="beranda" style="background-color: white; margin-top: 6.5%; max-width: 100%; height: 740px; max-height: 1080px;">
         <div class="row">
             <div class="col-md-4" style="margin-top: 10%; margin-left: 6%;">
                 <div class="container">
@@ -73,6 +76,44 @@
                 </div>
             </div>
         </div>
+    </div>
+    
+    <div class="container " id="produk" style="background-color: white; margin-top: 1%; max-width: 100%; height: 740px; max-height: 1080px;">
+        <div class="row">
+            <div class="col-md-3 justify-content-center" style="margin-top: 10%; margin-left: 15%">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/terasi.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Terasi 100ton</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-warning">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 justify-content-center" style="margin-top: 10%;">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/terasi.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Terasi 100ton</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-warning">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 justify-content-center" style="margin-top: 10%;">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/terasi.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Terasi 100ton</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-warning">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 

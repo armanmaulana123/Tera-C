@@ -41,7 +41,9 @@
                 <h3 style="color:#F19066;">Tera-C</h3>
             </div>
             <div class="col-md-1" style="margin-left: 10%;">
-                <a href="<?= base_url('landing') ?>" style="text-decoration: none; font-size:xx-large; color:#F19066;">x</a>
+                <h5>
+                    <a href="<?= base_url('landing') ?>" style="text-decoration: none; font-size:xx-large; color:#F19066;">X</a>
+                </h5>
             </div>
         </div>
         <div class="row justify-content-center" style="margin-top: 3%;">
